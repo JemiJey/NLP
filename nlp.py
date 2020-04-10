@@ -4,7 +4,9 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 
 sentences = [
     'I love Python',
-    'I love Java too' ]
+    'I love Java too' ,
+    'I lve me',
+    'affection']
 
 
 tokenizer = Tokenizer(num_words=100) # num of words to tokenize here we pass 100
