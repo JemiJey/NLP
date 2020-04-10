@@ -1,0 +1,1 @@
+# when we do tokenizer in train data set the same dictionary or word index should be used for test data as well
