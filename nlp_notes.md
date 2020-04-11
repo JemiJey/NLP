@@ -1,3 +1,8 @@
-#### when we do tokenizer in train data set the same dictionary or word index should be used for test data as well
+#### Notes
 
-#### use oov_token to specify if the word is out of token in the test data
+- when we do tokenizer in train data set the same dictionary or word index should be used for test data as well
+
+- use oov_token to specify if the word is out of token in the test data
+
+- pad_sequences has paarameters as sequences and before or after the sentence and max_length 
+  padded = pad_sequences(sequences, padding = 'post', max_length=5)
