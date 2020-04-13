@@ -9,7 +9,7 @@ imdb, info = tfds.load("imdb_reviews", with_info = True, as_supervised=True)
 
 train_data, test_data = imdb['train'], imdb['test']
 
-traiing_sentences = []
+training_sentences = []
 training_labels = []
 
 testing_sentences = []
@@ -35,9 +35,9 @@ oov_tok = "<oov>"
 
 
 tokenizer = Tokenizer(num_words = vocab_size ,oov_token = oov_tok)
-tokenizer.fit_on_texts(traiing_sentences)
+tokenizer.fit_on_texts(training_sentences)
 word_index = tokenizer.word_index
-sequences = tokenizer.texts_to_sequences(traiing_sentences)
+sequences = tokenizer.texts_to_sequences(training_sentences)
 padded = pad_sequences(sequences, maxlen = max_length, truncating=trunc_type)
 
 
