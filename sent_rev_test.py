@@ -62,7 +62,7 @@ print(e)
 weights = e.get_weights()[0]
 print(weights.shape) # shape: (vocab_size, embedding_dim)
 
-'''import io
+import io
 
 out_v = io.open('vecs.tsv', 'w', encoding='utf-8')
 out_m = io.open('meta.tsv', 'w', encoding='utf-8')
@@ -85,4 +85,4 @@ else:
 
 sentence = "I really think this is amazing. honest."
 sequence = tokenizer.texts_to_sequences(sentence)
-print(sequence)'''
+print(sequence)
